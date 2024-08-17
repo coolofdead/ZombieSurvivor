@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
+  m_Name: Kar98k
+  m_EditorClassIdentifier: 
+  weaponSprite: {fileID: 1656747760, guid: e63f37ae4ac3d4b3eacb1016f2b1ffee, type: 3}
+  price: 700
+  shootClip: {fileID: 8300000, guid: fc0c8d265811e4e988ab8611314f8e86, type: 3}
+  emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
+  reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
+  Damage: 24
+  MaxAmmo: 6
+  FireRate: 1.3
