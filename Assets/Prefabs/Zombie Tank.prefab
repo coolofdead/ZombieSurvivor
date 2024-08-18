@@ -276,6 +276,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   headOffset: 0.7
   legsOffset: 0.55
+  damageDelay: 0.65
   zombieSR: {fileID: 7616901947716841692}
   zombieHitAnimator: {fileID: 3827199057511585437}
   hitAnimator: {fileID: 7914884991500705813}
@@ -291,7 +292,7 @@ MonoBehaviour:
   audioSource: {fileID: 6093140336218407842}
   healthPack: {fileID: -1068437541271922593, guid: 584131044d91c45f6a3d00d8130f6ff7, type: 3}
   ammo: {fileID: 1888442625877842787, guid: cc70f5018516245bf8345126258659dc, type: 3}
-  dropRate: 8
+  dropRate: 4
   agent: {fileID: 6378124796434250362}
 --- !u!195 &6378124796434250362
 NavMeshAgent:

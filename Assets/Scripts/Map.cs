@@ -36,13 +36,13 @@ public class Map : MonoBehaviour
         }
     }
 
-    private void UnlockWeaponBox()
+    public void UnlockWeaponBox(bool showBoxDelivering = true)
     {
         if (weaponBoxes.All(weaponBox => weaponBox.IsUnlocked)) return;
 
         var weaponBox = weaponBoxes.First(weaponBox => !weaponBox.IsUnlocked);
         weaponBox.UnlockBox();
 
-        UIManager.Instance.GameView.WaveUI.ShowWeaponBoxDelivering();
+        if (showBoxDelivering) UIManager.Instance.GameView.WaveUI.ShowWeaponBoxDelivering();
     }
 }

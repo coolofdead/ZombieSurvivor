@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public AudioClip menuThemeClip;
 
     [Header("Game")]
+    public Map map;
     public Vector3 startGamePos;
     public AudioClip[] gameThemeClips;
 
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour
                    AudioManager.Instance.PlayTheme(gameThemeClips);
                    WaveMaanger.Insntance.StartWave();
 
+                   map.UnlockWeaponBox(false);
                    mapIntro.SetActive(false);
 
                    CurrentGameData = new();

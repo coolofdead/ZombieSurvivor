@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 153610940}
   - component: {fileID: 153610942}
   - component: {fileID: 153610941}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: PointsTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180957086}
   - component: {fileID: 180957087}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 199407627}
   - component: {fileID: 199407629}
   - component: {fileID: 199407628}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Leave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2036,7 +2036,7 @@ GameObject:
   - component: {fileID: 239409575}
   - component: {fileID: 239409574}
   - component: {fileID: 239409573}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3770,7 +3770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498262744}
   - component: {fileID: 498262746}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: WeaponOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7024,7 +7024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025961766}
   - component: {fileID: 1025961768}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LeaveOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8542,7 +8542,7 @@ GameObject:
   - component: {fileID: 1217710898}
   - component: {fileID: 1217710897}
   - component: {fileID: 1217710896}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10271,6 +10271,7 @@ GameObject:
   - component: {fileID: 1493340823}
   - component: {fileID: 1493340822}
   - component: {fileID: 1493340821}
+  - component: {fileID: 1493340824}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -10364,6 +10365,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493340819}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!208 &1493340824
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493340819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1495784063
 GameObject:
   m_ObjectHideFlags: 0
@@ -12625,7 +12642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849318303}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LeaveBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14656,6 +14673,7 @@ MonoBehaviour:
   playerCharacterController: {fileID: 914790820}
   transitionAnimator: {fileID: 944658474}
   menuThemeClip: {fileID: 8300000, guid: a31ef9b3578c04c83af9b6fabd345cd0, type: 3}
+  map: {fileID: 977567544}
   startGamePos: {x: -4.8, y: 0, z: 20.1}
   gameThemeClips:
   - {fileID: 8300000, guid: a373bd9c794e24c13a22b6b6be4c2ada, type: 3}
@@ -14981,7 +14999,7 @@ GameObject:
   - component: {fileID: 2843957578367854963}
   - component: {fileID: 6472800198117919559}
   - component: {fileID: 6472800198117919560}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15070,7 +15088,7 @@ GameObject:
   - component: {fileID: 1628409724028604469}
   - component: {fileID: 9194903444820349224}
   - component: {fileID: 4632851075239059083}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15335,7 +15353,7 @@ GameObject:
   - component: {fileID: 5255895313339414686}
   - component: {fileID: 6071031913022482643}
   - component: {fileID: 5102316906354090032}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: PointsTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15458,7 +15476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3470461259277287957}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: PlayBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15563,7 +15581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4853364527767298779}
   - component: {fileID: 850823532278807634}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15582,7 +15600,7 @@ GameObject:
   - component: {fileID: 6700581788509640800}
   - component: {fileID: 5678982867381243100}
   - component: {fileID: 201054439804524957}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
