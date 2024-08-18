@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5882096024436523017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: damage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: health
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealth
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: headOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: legsOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].value
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].inSlope
+      value: 0.09919532
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].inSlope
+      value: 1.2265577
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].outSlope
+      value: 0.09919532
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].inWeight
+      value: 0.037906125
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].outSlope
+      value: 1.2265577
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].outWeight
+      value: 0.13718413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827199057511585437, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e10bdf6f8d61be6408fd891db8366946, type: 2}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6087547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7933585
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -7.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -156.389
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712041368456912320, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_Name
+      value: ZombieBat
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954465970372740600, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378124796434250362, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616901947716841692, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de6cb1a4c7de246a083f7177445e1c1d, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}

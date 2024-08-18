@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
+  m_Name: Mosin Nagant
+  m_EditorClassIdentifier: 
+  gunType: 0
+  gunPerk: 0
+  weaponSprite: {fileID: 1633169728, guid: 083dde8ab4c184c788f7be0e4478d425, type: 3}
+  price: 700
+  shootClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}
+  emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
+  reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
+  Damage: 38
+  headDamageMultiplier: 3.4
+  chestDamageMultiplier: 1
+  legsDamageMultiplier: 0.75
+  MaxAmmo: 5
+  FireRate: 0.93
+  FireAnimationSpeed: 0.43
