@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Weapon", menuName = "ScriptableObjects/Weapon", order = 1)]
@@ -9,6 +8,7 @@ public class WeaponSO : ScriptableObject
 {
     [Header("Gun")]
     public GunType gunType;
+    public GunStyle gunStyle;
     public GunPerk gunPerk;
     public Sprite weaponSprite;
     public int price;
@@ -38,6 +38,15 @@ public class WeaponSO : ScriptableObject
     public int StartMagazine = 5;
     public float FireRate;
     public float FireAnimationSpeed;
+}
+
+public enum GunStyle
+{
+    Rifle,
+    SMG,
+    Shotgun,
+    Pistol,
+    Sniper,
 }
 
 public enum GunType

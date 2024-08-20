@@ -50,7 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponBox: {fileID: 8965228572665329693}
   deliveryBoxAnimated: {fileID: 7798243986302485063}
-  overworldLight: {fileID: 5722374513851166991}
+  overworldLight: {fileID: 4960072413835754718}
+  finalLightColor: {r: 0.7176471, g: 0.6627451, b: 0.32941177, a: 0.14901961}
   IsUnlocked: 0
 --- !u!1 &7635386127910469825
 GameObject:
@@ -286,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8412504129193760840}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.5200336, z: -0, w: 0.8541458}
+  m_LocalRotation: {x: -0, y: 0.9398888, z: -0, w: 0.34148088}
   m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 0, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
@@ -335,7 +336,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7169812, g: 0.6630703, b: 0.32805273, a: 0.14901961}
+  m_Color: {r: 0.7176471, g: 0.39777938, b: 0.32941177, a: 0.14901961}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -415,6 +416,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8275590834569421210}
     m_Modifications:
+    - target: {fileID: 265591726252606192, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8541458
+      objectReference: {fileID: 0}
+    - target: {fileID: 265591726252606192, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5200336
+      objectReference: {fileID: 0}
     - target: {fileID: 2519601299406225157, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -473,27 +482,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 12.42
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498222401208075662, guid: 15fabaf35f7ac48d99be365f9dbc8858, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

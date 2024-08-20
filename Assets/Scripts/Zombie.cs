@@ -18,6 +18,9 @@ public class Zombie : MonoBehaviour, IShootable
     public float damageDelay = 1.15f;
     private float lastDamageDone;
 
+    public bool exploseOnDeath;
+    public int damageOnExplode = 13;
+
     [Header("Animators")]
     public SpriteRenderer zombieSR;
     public Animator zombieHitAnimator;
@@ -62,6 +65,20 @@ public class Zombie : MonoBehaviour, IShootable
         {
             agent.isStopped = true;
             diePS.Play();
+
+            if (exploseOnDeath)
+            {
+                var explosionHits = Physics.SphereCastAll(new Ray(transform.position, Vector3.one), 4.5f);
+                foreach (var explosionHit in explosionHits)
+                {
+                    if (!explosionHit.transform.gameObject.CompareTag("Player")) continue;
+
+                    if (explosionHit.transform.TryGetComponent(out PlayerController playerController))
+                    {
+                        playerController.TakeDamage(damageOnExplode);
+                    }
+                }
+            }
 
             zombieSR.DOFade(0, 0.45f).SetEase(Ease.OutSine);
             transform.DOLocalMove(transform.localPosition - transform.forward * 1.18f, 1.2f).SetEase(Ease.OutQuint).OnComplete(() =>

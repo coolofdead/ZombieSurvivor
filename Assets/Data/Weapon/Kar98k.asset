@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
-  m_Name: Tokarev TT-33
+  m_Name: Kar98k
   m_EditorClassIdentifier: 
   gunType: 0
+  gunStyle: 4
   gunPerk: 0
-  weaponSprite: {fileID: 628090875, guid: dc4971859cacb45c388f3437fc0bd4eb, type: 3}
-  price: 450
-  shootClip: {fileID: 8300000, guid: b9075057f62af4c4dafb1e6d06bc7d22, type: 3}
+  weaponSprite: {fileID: 1656747760, guid: e63f37ae4ac3d4b3eacb1016f2b1ffee, type: 3}
+  price: 700
+  shootClip: {fileID: 8300000, guid: 87a4d4b457ec7594789b8c6b3df2c1f1, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
-  Damage: 5
-  headDamageMultiplier: 1.65
+  Damage: 24
+  headDamageMultiplier: 2.2
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
-  MaxAmmo: 7
+  MaxAmmo: 6
   StartMagazine: 5
-  FireRate: 0.23
-  FireAnimationSpeed: 0.21
+  FireRate: 1.18
+  FireAnimationSpeed: 0.36

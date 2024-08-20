@@ -36,6 +36,7 @@ public class WaveMaanger : MonoBehaviour
     public void StartWave()
     {
         UIManager.Instance.GameView.WaveUI.UpdateWave();
+        VendorTruck.Instance.RefreshOffer();
 
         StartCoroutine(HandleSpawningWave());
     }
@@ -62,7 +63,8 @@ public class WaveMaanger : MonoBehaviour
     {
         for (int i = 0; i < TotalZombieToSpawn; i++)
         {
-            var nearestSpawnPoses = map.zombieSpawnPoses.OrderBy(spawnPos => Vector3.Distance(spawnPos.position, PlayerManager.Instance.transform.position)).Take(5).ToArray();
+            var nbToTake = CurrentWave > 12 ? 7 : 4;
+            var nearestSpawnPoses = map.zombieSpawnPoses.OrderBy(spawnPos => Vector3.Distance(spawnPos.position, PlayerManager.Instance.transform.position)).Take(nbToTake).ToArray();
             var spawnPos = nearestSpawnPoses[Random.Range(0, 3)];
 
             var nextZombieRate = rnd.Next(0, 100);
@@ -78,7 +80,7 @@ public class WaveMaanger : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay);
         }
 
-        yield return new WaitWhile(() => !zombies.All(zombie => zombie.health == 0));
+        yield return new WaitWhile(() => !zombies.All(zombie => zombie.health <= 0));
 
         map.OnWaveFinished(CurrentWave);
 

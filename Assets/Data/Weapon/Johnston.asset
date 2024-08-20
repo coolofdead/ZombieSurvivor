@@ -10,19 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
-  m_Name: Luger
+  m_Name: Johnston
   m_EditorClassIdentifier: 
-  gunType: 0
+  gunType: 1
+  gunStyle: 1
   gunPerk: 0
-  weaponSprite: {fileID: 192804889, guid: e63f37ae4ac3d4b3eacb1016f2b1ffee, type: 3}
-  price: 500
-  shootClip: {fileID: 8300000, guid: fc0c8d265811e4e988ab8611314f8e86, type: 3}
+  weaponSprite: {fileID: -2091902914, guid: a97eec655658741f5929e6aeecf7f2ff, type: 3}
+  price: 1700
+  shootClip: {fileID: 8300000, guid: 50114eab26a8e4b569c9bc10dcc5fea4, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
-  Damage: 17
-  headDamageMultiplier: 1.8
+  Damage: 9
+  headDamageMultiplier: 2.2
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
-  MaxAmmo: 9
-  FireRate: 0.41
-  FireAnimationSpeed: 0.54
+  MaxAmmo: 24
+  StartMagazine: 9
+  FireRate: 0.18
+  FireAnimationSpeed: 0.18

@@ -9,4 +9,5 @@ public class GameView : MonoBehaviour
     public WeaponUI WeaponUI;
     public WaveUI WaveUI;
     public PointsUI PointsUI;
+    public PerkUI PerkUI;
 }

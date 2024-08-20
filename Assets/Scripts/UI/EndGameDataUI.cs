@@ -32,13 +32,13 @@ public class EndGameDataUI : MonoBehaviour
 
     IEnumerator ShowEndGameDataProgress(GameData gameData)
     {
-        endGameTMP.text = $"You survived : 0 waves\nagainst a total of : 0 zombies\nfor : 0 bullets shot\nwith : 0 headhsot";
+        endGameTMP.text = $"You survived : 0 waves\nagainst a total of : 0 zombies\nfor a total of : 0 damage\nfor : 0 bullets shot\nwith : 0 headhsot";
 
         yield return new WaitForSeconds(1.25f);
 
         for (int i = 0; i <= gameData.finalWave; i++)
         {
-            endGameTMP.text = $"You survived : {i} waves\nagainst a total of : 0 zombies\nfor : 0 bullets shot\nwith : 0 headhsot";
+            endGameTMP.text = $"You survived : {i} waves\nagainst a total of : 0 zombies\nfor a total of : 0 damage\nfor : 0 bullets shot\nwith : 0 headhsot";
 
             yield return new WaitForSeconds(0.03f);
         }
@@ -47,16 +47,23 @@ public class EndGameDataUI : MonoBehaviour
 
         for (int i = 0; i <= gameData.totalZombiesKilled; i++)
         {
-            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {i} zombies\nfor : 0 bullets shot\nwith : 0 headhsot";
+            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {i} zombies\nfor a total of : 0 damage\nfor : 0 bullets shot\nwith : 0 headhsot";
 
             yield return new WaitForSeconds(0.012f);
+        }
+
+        for (int i = 0; i <= gameData.totalDamageDealt; i++)
+        {
+            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor a total of : {i} damage\nfor : 0 bullets shot\nwith : 0 headhsot";
+
+            yield return new WaitForSeconds(0.001f);
         }
 
         yield return new WaitForSeconds(0.65f);
 
         for (int i = 0; i <= gameData.totalBulletsShot; i++)
         {
-            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor : {i} bullets shot\nwith : 0 headhsot";
+            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor a total of : {gameData.totalDamageDealt} damage\nfor : {i} bullets shot\nwith : 0 headhsot";
 
             yield return new WaitForSeconds(0.008f);
         }
@@ -65,7 +72,7 @@ public class EndGameDataUI : MonoBehaviour
 
         for (int i = 0; i <= gameData.totalHeadshot; i++)
         {
-            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor : {gameData.totalBulletsShot} bullets shot\nwith : {i} headhsot";
+            endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor a total of : {gameData.totalDamageDealt} damage\nfor : {gameData.totalBulletsShot} bullets shot\nwith : {i} headhsot";
 
             yield return new WaitForSeconds(0.01f);
         }

@@ -10,19 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
-  m_Name: Winchester-M12
+  m_Name: Sterling
   m_EditorClassIdentifier: 
-  gunType: 0
-  gunPerk: 2
-  weaponSprite: {fileID: -1632482320, guid: 083dde8ab4c184c788f7be0e4478d425, type: 3}
-  price: 650
-  shootClip: {fileID: 8300000, guid: b17f7a7a96200433d83192382fdf74b8, type: 3}
+  gunType: 1
+  gunStyle: 0
+  gunPerk: 0
+  weaponSprite: {fileID: -1306858172, guid: a97eec655658741f5929e6aeecf7f2ff, type: 3}
+  price: 2800
+  shootClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
-  Damage: 23
-  headDamageMultiplier: 2.2
+  Damage: 8
+  headDamageMultiplier: 1.6
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
-  MaxAmmo: 8
-  FireRate: 0.67
-  FireAnimationSpeed: 0.67
+  MaxAmmo: 47
+  StartMagazine: 7
+  FireRate: 0.19
+  FireAnimationSpeed: 0.22

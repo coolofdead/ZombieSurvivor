@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
-  m_Name: M3
+  m_Name: RPD
   m_EditorClassIdentifier: 
   gunType: 1
-  gunPerk: 0
-  weaponSprite: {fileID: 691187169, guid: 083dde8ab4c184c788f7be0e4478d425, type: 3}
-  price: 950
-  shootClip: {fileID: 8300000, guid: 50114eab26a8e4b569c9bc10dcc5fea4, type: 3}
+  gunPerk: 1
+  weaponSprite: {fileID: 974363141, guid: e63f37ae4ac3d4b3eacb1016f2b1ffee, type: 3}
+  price: 5800
+  shootClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
-  Damage: 8
+  Damage: 5
   headDamageMultiplier: 2.2
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
-  MaxAmmo: 21
-  StartMagazine: 9
-  FireRate: 0.13
-  FireAnimationSpeed: 0.13
+  MaxAmmo: 173
+  StartMagazine: 4
+  FireRate: 0.06
+  FireAnimationSpeed: 0.06

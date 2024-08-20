@@ -7,7 +7,8 @@ public class WeaponBoxArea : MonoBehaviour
 {
     public WeaponBox weaponBox;
     public GameObject deliveryBoxAnimated;
-    public Transform overworldLight;
+    public SpriteRenderer overworldLight;
+    public Color finalLightColor;
 
     public bool IsUnlocked;
 
@@ -18,7 +19,7 @@ public class WeaponBoxArea : MonoBehaviour
         gameObject.SetActive(true);
 
         DOTween.Sequence()
-                .Append(overworldLight.DOScaleX(1, 0.75f).SetEase(Ease.OutSine))
+                .Append(overworldLight.transform.DOScaleX(2, 0.75f).SetEase(Ease.OutSine))
                .AppendInterval(16)
                //.AppendCallback(() => deliveryBoxAnimated.SetActive(true))
                //.AppendInterval(1.35f)
@@ -28,6 +29,7 @@ public class WeaponBoxArea : MonoBehaviour
                .Append(weaponBox.transform.DOScale(Vector3.one * 1.36f, 0.48f).SetEase(Ease.OutSine).SetLoops(2, LoopType.Yoyo))
                .AppendCallback(() => weaponBox.Unlock())
                .AppendInterval(10)
+               .Append(overworldLight.DOColor(finalLightColor, 1.25f).SetEase(Ease.OutSine))
                //.AppendCallback(() => overworldLight.DOScaleX(0, 0.75f).SetEase(Ease.OutSine))
                .Play();
     }

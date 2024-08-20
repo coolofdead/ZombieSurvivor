@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
                    playerCharacterController.enabled = true;
 
                    PlayerManager.Instance.transform.localPosition = startGamePos;
+                   PlayerManager.Instance.transform.localRotation = Quaternion.identity;
                    PlayerManager.Instance.InitPlayer();
                    AudioManager.Instance.PlayTheme(gameThemeClips);
                    WaveMaanger.Insntance.StartWave();
@@ -100,6 +101,7 @@ public struct GameData
 {
     public int finalWave;
     public int totalZombiesKilled;
+    public int totalDamageDealt;
     public int totalBulletsShot;
     public int totalHeadshot;
 }

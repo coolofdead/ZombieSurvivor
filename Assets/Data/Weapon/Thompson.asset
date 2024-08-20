@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403641d2f376249f6bbfaa20ba5fb75d, type: 3}
-  m_Name: Sterling
+  m_Name: Thompson
   m_EditorClassIdentifier: 
   gunType: 1
+  gunStyle: 1
   gunPerk: 0
-  weaponSprite: {fileID: -1306858172, guid: a97eec655658741f5929e6aeecf7f2ff, type: 3}
-  price: 2800
-  shootClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}
+  weaponSprite: {fileID: 130731743, guid: 083dde8ab4c184c788f7be0e4478d425, type: 3}
+  price: 1100
+  shootClip: {fileID: 8300000, guid: fc0c8d265811e4e988ab8611314f8e86, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}
   Damage: 8
-  headDamageMultiplier: 1.6
+  headDamageMultiplier: 1.8
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
-  MaxAmmo: 47
-  StartMagazine: 7
-  FireRate: 0.19
-  FireAnimationSpeed: 0.22
+  MaxAmmo: 24
+  StartMagazine: 9
+  FireRate: 0.17
+  FireAnimationSpeed: 0.23

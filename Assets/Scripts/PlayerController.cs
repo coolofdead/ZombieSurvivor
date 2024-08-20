@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,6 +12,9 @@ public class PlayerController : MonoBehaviour
     [Header("Stats")]
     public int MaxHealth;
     public int health;
+
+    public List<PerkType> perks = new();
+    public List<PerkSO> perksSO = new();
 
     [Header("Regen")]
     public int healthRegen = 1;
@@ -43,6 +47,8 @@ public class PlayerController : MonoBehaviour
     {
         if (health == 0) return;
 
+        if (perks.Contains(PerkType.Drug)) damage -= 5;
+
         health = Mathf.Clamp(health - damage, 0, MaxHealth);
         lastHitTime = Time.time;
 
@@ -59,5 +65,53 @@ public class PlayerController : MonoBehaviour
         Points += amount;
 
         UIManager.Instance.GameView.PointsUI.UpdatePoints();
+    }
+
+    public void UnlockPerk(PerkSO perkSO)
+    {
+        perksSO.Add(perkSO);
+        perks.Add(perkSO.perkType);
+
+        UIManager.Instance.GameView.PerkUI.UpdatePerks();
+
+        if (perkSO.perkType == PerkType.BloodPack)
+        {
+            MaxHealth += 50;
+        }
+
+        if (perkSO.perkType == PerkType.Medkit)
+        {
+            healthRegen += 1;
+        }
+
+        if (perkSO.perkType == PerkType.Syringe)
+        {
+            delayBeforeRegenInSec -= 2;
+        }
+
+        if (perkSO.perkType == PerkType.Juice)
+        {
+            if (TryGetComponent(out FirstPersonController firstPersonController))
+            {
+                firstPersonController.MoveSpeed += 1.5f;
+                firstPersonController.SprintSpeed += 0.5f;
+            }
+        }
+
+        if (perkSO.perkType == PerkType.Coffee)
+        {
+            if (TryGetComponent(out FirstPersonController firstPersonController))
+            {
+                firstPersonController.MaxSprintEnergy += 240f;
+            }
+        }
+
+        if (perkSO.perkType == PerkType.Melon)
+        {
+            if (TryGetComponent(out FirstPersonController firstPersonController))
+            {
+                firstPersonController.SprintEnergyRecoverPerSec += 0.5f;
+            }
+        }
     }
 }
