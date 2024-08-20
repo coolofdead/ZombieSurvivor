@@ -8,17 +8,21 @@ public class WeaponBox : MonoBehaviour
 {
     public WeaponSO weaponToBuy;
     public TMP_Text buyTMP;
+    public bool autoUnlock;
 
     public SpriteRenderer weaponSR;
 
     private PlayerControls controls;
     private bool isPlayerInRangeToBuy;
 
+
     private void Start()
     {
         controls = new();
         controls.Enable();
         controls.Player.BuyWeapon.performed += _ => BuyWeapon();
+
+        if (autoUnlock) Unlock();
     }
 
     public void Unlock()

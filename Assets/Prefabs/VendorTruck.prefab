@@ -1025,7 +1025,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9344d58d44d3a48a4b7dfa1639b44ace, type: 2}
   - {fileID: 11400000, guid: a458f805db34f40ee803823f707218ce, type: 2}
   - {fileID: 11400000, guid: 3224f790cf23a4f8c8fca51c8dd6ac1c, type: 2}
-  extraCostPerPerk: 200
+  extraCostPerPerk: 500
   sellingPerkTMP: {fileID: 2011462204904533902}
   buyTMP: {fileID: 4143553064934698787}
   perkSR: {fileID: 5631771687904868861}
