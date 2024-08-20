@@ -32,7 +32,9 @@ public class EndGameDataUI : MonoBehaviour
 
     IEnumerator ShowEndGameDataProgress(GameData gameData)
     {
-        yield return new WaitForSeconds(0.85f);
+        endGameTMP.text = $"You survived : 0 waves\nagainst a total of : 0 zombies\nfor : 0 bullets shot\nwith : 0 headhsot";
+
+        yield return new WaitForSeconds(1.25f);
 
         for (int i = 0; i <= gameData.finalWave; i++)
         {
@@ -47,7 +49,7 @@ public class EndGameDataUI : MonoBehaviour
         {
             endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {i} zombies\nfor : 0 bullets shot\nwith : 0 headhsot";
 
-            yield return new WaitForSeconds(0.03f);
+            yield return new WaitForSeconds(0.012f);
         }
 
         yield return new WaitForSeconds(0.65f);
@@ -56,7 +58,7 @@ public class EndGameDataUI : MonoBehaviour
         {
             endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor : {i} bullets shot\nwith : 0 headhsot";
 
-            yield return new WaitForSeconds(0.03f);
+            yield return new WaitForSeconds(0.008f);
         }
 
         yield return new WaitForSeconds(0.65f);
@@ -65,7 +67,7 @@ public class EndGameDataUI : MonoBehaviour
         {
             endGameTMP.text = $"You survived : {gameData.finalWave} waves\nagainst a total of : {gameData.totalZombiesKilled} zombies\nfor : {gameData.totalBulletsShot} bullets shot\nwith : {i} headhsot";
 
-            yield return new WaitForSeconds(0.03f);
+            yield return new WaitForSeconds(0.01f);
         }
 
         continueFillBar.DOFillAmount(1, waitTimeBeforeContinuing).SetEase(Ease.OutSine).SetDelay(delayBeforeEarlySkip)

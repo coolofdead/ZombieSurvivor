@@ -33,6 +33,14 @@ PrefabInstance:
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[0].time
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[1].time
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: SpeedPerWave.m_Curve.Array.data[0].value
       value: 5.5
       objectReference: {fileID: 0}
@@ -78,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6197971
+      value: 0.6195113
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -86,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7847621
+      value: -0.78498775
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -110,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5954465970372740600, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_Radius
-      value: 0.08
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6006367938288191091, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_Intensity

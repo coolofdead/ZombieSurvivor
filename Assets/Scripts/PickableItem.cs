@@ -15,12 +15,6 @@ public abstract class PickableItem : MonoBehaviour
         if (!other.gameObject.CompareTag("Player")) return;
 
         Pickup();
-
-        transform.DOScale(Vector3.zero, 0.75f).SetEase(Ease.OutSine).OnComplete(() =>
-        {
-            transform.DOKill();
-            gameObject.SetActive(false);
-        });
     }
 
     public abstract void Pickup();

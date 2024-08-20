@@ -26,9 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111651270017312393}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9837358, z: -0, w: 0.17962141}
-  m_LocalPosition: {x: 0.000002861023, y: 0.875, z: -0.00000047683716}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalRotation: {x: -0, y: 0.52003354, z: -0, w: 0.8541459}
+  m_LocalPosition: {x: 0.000002861023, y: 0, z: -0.00000047683716}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2519601299406225157}
@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 2519601299406225157}
   - component: {fileID: 7977002815253715791}
   - component: {fileID: 2503057305172096008}
+  - component: {fileID: 5718515162898952844}
   m_Layer: 0
   m_Name: BuyWeaponBox
   m_TagString: Untagged
@@ -229,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 4942013631880611410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.56, y: 0, z: -4.35}
+  m_LocalPosition: {x: -10.56, y: 50, z: -4.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -276,6 +277,22 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 4.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &5718515162898952844
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942013631880611410}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5174504242303250895
 GameObject:
   m_ObjectHideFlags: 0

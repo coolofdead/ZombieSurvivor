@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public bool IsGamePaused;
 
     [Header("Intro")]
+    public Vector3 introStartPos;
     public GameObject mapIntro;
     public CharacterController playerCharacterController;
     public Animator transitionAnimator;
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
         playerCharacterController.enabled = false;
 
         AudioManager.Instance.PlayTheme(menuThemeClip);
-        PlayerManager.Instance.transform.localPosition = Vector3.zero;
+        PlayerManager.Instance.transform.localPosition = introStartPos;
         mapIntro.SetActive(true);
     }
 
@@ -90,6 +91,7 @@ public class GameManager : MonoBehaviour
     {
         playerCharacterController.enabled = false;
         UIManager.Instance.EndGameView.EndGameDataUI.ShowEndGameData(CurrentGameData);
+        WaveMaanger.Insntance.StopAllCoroutines();
         WaveMaanger.Insntance.ClearZombies();
     }
 }

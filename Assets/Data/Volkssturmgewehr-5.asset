@@ -19,10 +19,11 @@ MonoBehaviour:
   shootClip: {fileID: 8300000, guid: b17f7a7a96200433d83192382fdf74b8, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}
-  Damage: 17
+  Damage: 14
   headDamageMultiplier: 1.6
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
   MaxAmmo: 28
+  StartMagazine: 9
   FireRate: 0.17
   FireAnimationSpeed: 0.17

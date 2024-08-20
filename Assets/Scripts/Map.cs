@@ -30,7 +30,7 @@ public class Map : MonoBehaviour
 
     public void OnWaveFinished(int wave)
     {
-        if (wave == 1 || wave % 3 == 0)
+        if (wave % 2 == 0)
         {
             UnlockWeaponBox();
         }

@@ -35,6 +35,7 @@ public class WeaponSO : ScriptableObject
     }
 
     public int MaxAmmo;
+    public int StartMagazine = 5;
     public float FireRate;
     public float FireAnimationSpeed;
 }

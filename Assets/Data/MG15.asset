@@ -24,5 +24,6 @@ MonoBehaviour:
   chestDamageMultiplier: 1
   legsDamageMultiplier: 0.75
   MaxAmmo: 4
+  StartMagazine: 4
   FireRate: 2.1
   FireAnimationSpeed: 0.14

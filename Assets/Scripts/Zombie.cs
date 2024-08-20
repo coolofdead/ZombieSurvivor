@@ -58,7 +58,7 @@ public class Zombie : MonoBehaviour, IShootable
         hitAnimator.Play("ZombieHit");
         hitTransform.localPosition = new Vector2(Random.Range(-0.028f, 0.028f), Random.Range(-0.028f, 0.028f));
 
-        if (health == 0 && !agent.isStopped)
+        if (health <= 0 && !agent.isStopped)
         {
             agent.isStopped = true;
             diePS.Play();
@@ -112,6 +112,8 @@ public class Zombie : MonoBehaviour, IShootable
 
     private void OnTriggerStay(Collider other)
     {
+        if (health == 0) return;
+
         if (!other.gameObject.CompareTag("Player")) return;
 
         if (lastDamageDone + damageDelay > Time.time) return;

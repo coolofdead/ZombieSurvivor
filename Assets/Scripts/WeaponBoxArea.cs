@@ -20,14 +20,13 @@ public class WeaponBoxArea : MonoBehaviour
         DOTween.Sequence()
                 .Append(overworldLight.DOScaleX(1, 0.75f).SetEase(Ease.OutSine))
                .AppendInterval(16)
-               .AppendCallback(() => deliveryBoxAnimated.SetActive(true))
-               .AppendInterval(1.35f)
-               .AppendCallback(() => deliveryBoxAnimated.SetActive(true))
-               .AppendCallback(() =>
-               {
-                   weaponBox.gameObject.SetActive(true);
-                   weaponBox.transform.DOScale(Vector3.one, 0.35f).SetEase(Ease.OutSine);
-               })
+               //.AppendCallback(() => deliveryBoxAnimated.SetActive(true))
+               //.AppendInterval(1.35f)
+               //.AppendCallback(() => deliveryBoxAnimated.SetActive(true))
+               .AppendCallback(() => weaponBox.gameObject.SetActive(true))
+               .Append(weaponBox.transform.DOLocalMoveY(0, 8f).SetEase(Ease.OutSine))
+               .Append(weaponBox.transform.DOScale(Vector3.one * 1.36f, 0.48f).SetEase(Ease.OutSine).SetLoops(2, LoopType.Yoyo))
+               .AppendCallback(() => weaponBox.Unlock())
                .AppendInterval(10)
                //.AppendCallback(() => overworldLight.DOScaleX(0, 0.75f).SetEase(Ease.OutSine))
                .Play();

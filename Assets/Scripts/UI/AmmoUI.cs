@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class AmmoUI : MonoBehaviour
 {
+    public const string NO_AMMO_COLOR_TAG = "<color=red>";
+    public const string NO_AMMO_COLOR_END_TAG = "</color>";
+
     public BulletUI bulletUIPrefab;
     public Transform ammoParent;
     public TMP_Text ammoTMP;
@@ -15,7 +18,7 @@ public class AmmoUI : MonoBehaviour
 
     public void UseAmmo()
     {
-        var bulletUI = bulletUIs.First(bulletUI => !bulletUI.IsUsed);
+        var bulletUI = bulletUIs.Last(bulletUI => !bulletUI.IsUsed);
         bulletUI.Use();
 
         UpdateAmmoTMP();
@@ -23,9 +26,12 @@ public class AmmoUI : MonoBehaviour
 
     public void RefreshAmmos()
     {
-        foreach (var bulletUI in bulletUIs)
+        //if (PlayerManager.Instance.PlayerWeaponController.CurrentAmmo + PlayerManager.Instance.PlayerWeaponController.TotalAmmo >= PlayerManager.Instance.PlayerWeaponController.CurrentWeapon.MaxAmmo)
+
+        var ammoToReloads = Mathf.Clamp(PlayerManager.Instance.PlayerWeaponController.CurrentAmmo + PlayerManager.Instance.PlayerWeaponController.TotalAmmo, 0, bulletUIs.Count);
+        for (int i = 0; i < ammoToReloads; i++)
         {
-            bulletUI.Refill();
+            if (bulletUIs[i].IsUsed) bulletUIs[i].Refill();
         }
 
         UpdateAmmoTMP();
@@ -46,13 +52,13 @@ public class AmmoUI : MonoBehaviour
             bulletUIs.Add(newAmmo);
         }
 
-        bulletUIs.Reverse();
         RefreshAmmos();
     }
 
     private void UpdateAmmoTMP()
     {
-        ammoTMP.text = $"Ammo: {PlayerManager.Instance.PlayerWeaponController.CurrentAmmo} I {PlayerManager.Instance.PlayerWeaponController.CurrentWeapon.MaxAmmo} - {PlayerManager.Instance.PlayerWeaponController.CurrentWeapon.name}";
+        var hasNoAmmo = PlayerManager.Instance.PlayerWeaponController.CurrentAmmo == 0 && PlayerManager.Instance.PlayerWeaponController.TotalAmmo == 0;
+        ammoTMP.text = $"Ammo: {(hasNoAmmo ? NO_AMMO_COLOR_TAG : "")}{PlayerManager.Instance.PlayerWeaponController.CurrentAmmo}{(hasNoAmmo ? NO_AMMO_COLOR_END_TAG : "")} I <size=70%>{PlayerManager.Instance.PlayerWeaponController.TotalAmmo} - {PlayerManager.Instance.PlayerWeaponController.CurrentWeapon.name}";
 
         reloadTMP.SetActive(bulletUIs.All(bulletUI => bulletUI.IsUsed));
     }

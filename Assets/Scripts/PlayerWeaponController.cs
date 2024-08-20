@@ -8,6 +8,7 @@ public class PlayerWeaponController : MonoBehaviour
 {
     public WeaponSO CurrentWeapon;
     public int CurrentAmmo;
+    public int TotalAmmo;
 
     public AudioSource audioSource;
 
@@ -65,13 +66,14 @@ public class PlayerWeaponController : MonoBehaviour
             if (hit.transform.TryGetComponent(out IShootable shootable))
             {
                 var bodyPartHit = shootable.GetBodyPart(hit.point);
-                //print("Shoot on : " + bodyPartHit);
-                shootable.Hit((int)(CurrentWeapon.Damage * CurrentWeapon.DamageMultiplicator(bodyPartHit)));
-                
+                var damageDone = (int)(CurrentWeapon.Damage * CurrentWeapon.DamageMultiplicator(bodyPartHit));
+
+                shootable.Hit(damageDone);
+                UIManager.Instance.GameView.HealthUI.ShowDamageHit(damageDone, bodyPartHit == BodyPart.Head);
+
                 if (bodyPartHit == BodyPart.Head) GameManager.Instance.CurrentGameData.totalHeadshot++;
 
                 PlayerManager.Instance.PlayerController.GainPoints(shootable.IsDead() ? shootable.GetPointForKill() : shootable.GetPointForHit());
-
                 if (CurrentWeapon.gunPerk.HasFlag(GunPerk.ExplodingShot))
                 {
                     var aoeHits = Physics.SphereCastAll(new Ray(hit.point, Vector3.one), 5f);
@@ -99,6 +101,7 @@ public class PlayerWeaponController : MonoBehaviour
         }
 
         CurrentWeapon = weaponSO;
+        TotalAmmo = weaponSO.MaxAmmo * weaponSO.StartMagazine;
         lastShootTime = Time.time;
 
         UIManager.Instance.GameView.WeaponUI.ChangeWeapon();
@@ -109,9 +112,11 @@ public class PlayerWeaponController : MonoBehaviour
 
     public void Reload()
     {
-        if (CurrentAmmo == CurrentWeapon.MaxAmmo) return;
+        if (CurrentAmmo == CurrentWeapon.MaxAmmo || TotalAmmo == 0) return;
 
-        CurrentAmmo = CurrentWeapon.MaxAmmo;
+        var ammoToReload = Mathf.Clamp(CurrentWeapon.MaxAmmo - CurrentAmmo, 0, TotalAmmo);
+        CurrentAmmo = CurrentAmmo + ammoToReload;
+        TotalAmmo -= ammoToReload;
 
         audioSource.clip = CurrentWeapon.reloadClip;
         audioSource.Play();

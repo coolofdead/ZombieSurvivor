@@ -54,13 +54,15 @@ public class WaveMaanger : MonoBehaviour
         {
             zombie.Hit(zombie.MaxHealth);
         }
+
+        zombies.Clear();
     }
 
     IEnumerator HandleSpawningWave()
     {
         for (int i = 0; i < TotalZombieToSpawn; i++)
         {
-            var nearestSpawnPoses = map.zombieSpawnPoses.OrderBy(spawnPos => Vector3.Distance(spawnPos.position, PlayerManager.Instance.transform.position)).Take(3).ToArray();
+            var nearestSpawnPoses = map.zombieSpawnPoses.OrderBy(spawnPos => Vector3.Distance(spawnPos.position, PlayerManager.Instance.transform.position)).Take(5).ToArray();
             var spawnPos = nearestSpawnPoses[Random.Range(0, 3)];
 
             var nextZombieRate = rnd.Next(0, 100);

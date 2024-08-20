@@ -8,8 +8,10 @@ using UnityEngine.UI;
 public class HealthUI : MonoBehaviour
 {
     public Image healthFill;
-    public Image energyFill;
     public TMP_Text healthTMP;
+    public TMP_Text damageHitTMPPrefab;
+
+    public Color critDamageColor;
 
     public Image[] bloodHitFX;
 
@@ -38,5 +40,15 @@ public class HealthUI : MonoBehaviour
 
             bloodHitFX[i].transform.DOScale(bloodTargetScale, 0.28f).SetEase(Ease.OutExpo);
         }
+    }
+
+    public void ShowDamageHit(int damageHit, bool isCrit)
+    {
+        var damageHitTMP = Instantiate(damageHitTMPPrefab, transform);
+        damageHitTMP.DOFade(0, 0.75f).SetEase(Ease.InCubic);
+        damageHitTMP.transform.DOLocalMoveY(58, 1.15f).SetEase(isCrit ? Ease.OutExpo : Ease.OutQuad).OnComplete(() => Destroy(damageHitTMP.gameObject));
+
+        damageHitTMP.text = $"-{damageHit}";
+        if (isCrit) damageHitTMP.color = critDamageColor;
     }
 }

@@ -33,12 +33,68 @@ PrefabInstance:
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[1].value
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[0].inSlope
+      value: 0.4287342
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[1].inSlope
+      value: 0.24807246
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[0].outSlope
+      value: 0.4287342
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[1].inWeight
+      value: 0.095667824
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[1].outSlope
+      value: 0.24807246
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].value
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].value
       value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: SpeedPerWave.m_Curve.Array.data[0].outWeight
+      value: 0.08303249
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].inSlope
+      value: 0.19427982
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].inSlope
+      value: 5.3152223
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].outSlope
+      value: 0.19427982
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].inWeight
+      value: 0.12967123
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[1].outSlope
+      value: 5.3152223
+      objectReference: {fileID: 0}
+    - target: {fileID: 842471096032980229, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      propertyPath: MaxHealthPerWave.m_Curve.Array.data[0].outWeight
+      value: 0.15667868
       objectReference: {fileID: 0}
     - target: {fileID: 3827199057511585437, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_Controller
@@ -58,7 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.63429475
+      value: 0.6339472
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -66,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7730914
+      value: -0.77337635
       objectReference: {fileID: 0}
     - target: {fileID: 4483152183833778841, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
       propertyPath: m_LocalRotation.z
@@ -104,8 +160,40 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ca082da6e660e4768a2a366ff5689d1f, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5954465970372740600, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5712041368456912320, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4239898076879134784}
   m_SourcePrefab: {fileID: 100100000, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+--- !u!1 &2043921942800558420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5712041368456912320, guid: c5f03676abe1149cf91c04fcac3a15bc, type: 3}
+  m_PrefabInstance: {fileID: 5987614259011728532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &4239898076879134784
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043921942800558420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.04
+  m_Height: 0.16
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
