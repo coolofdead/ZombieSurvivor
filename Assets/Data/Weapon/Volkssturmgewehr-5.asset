@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Volkssturmgewehr-5
   m_EditorClassIdentifier: 
   gunType: 1
+  gunStyle: 0
   gunPerk: 0
   weaponSprite: {fileID: 782751324, guid: e63f37ae4ac3d4b3eacb1016f2b1ffee, type: 3}
-  price: 800
+  price: 1000
   shootClip: {fileID: 8300000, guid: b17f7a7a96200433d83192382fdf74b8, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 13e28bd670535ce46a0af0a592da4808, type: 3}

@@ -32,6 +32,8 @@ public class WeaponBox : MonoBehaviour
         {
             weaponSR.transform.DOLocalMoveY(weaponSR.transform.localPosition.y + 0.12f, 1.75f).SetEase(Ease.OutSine).SetLoops(-1, LoopType.Yoyo);
         });
+
+        ChangeWeapon(weaponToBuy);
     }
 
     private void BuyWeapon()

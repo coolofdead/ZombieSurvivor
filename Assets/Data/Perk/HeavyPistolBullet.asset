@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aefa8f4e9ff77480ab681bf68d9ee56b, type: 3}
   m_Name: HeavyPistolBullet
   m_EditorClassIdentifier: 
-  name: Heavy Pistol Bullet
   perkType: 2
-  price: 100
+  price: 500
   ico: {fileID: -1137867652, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
+  name: Heavy Pistol Bullet
+  bonusText: 

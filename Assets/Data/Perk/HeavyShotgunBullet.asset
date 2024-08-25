@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeavyShotgunBullet
   m_EditorClassIdentifier: 
   perkType: 4
-  price: 100
+  price: 500
   ico: {fileID: -2111169185, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Heavy Shotgun Bullet
   bonusText: more damage on shotgun

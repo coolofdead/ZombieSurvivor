@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeavySMGBullet
   m_EditorClassIdentifier: 
   perkType: 1
-  price: 100
+  price: 500
   ico: {fileID: -1290247190, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Heavy SMG Bullet
   bonusText: more damage on smg

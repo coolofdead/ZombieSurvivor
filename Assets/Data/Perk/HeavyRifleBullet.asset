@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeavyRifleBullet
   m_EditorClassIdentifier: 
   perkType: 0
-  price: 100
+  price: 500
   ico: {fileID: -1774696892, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Heavy Rifle Bullet
   bonusText: more damage on rifle

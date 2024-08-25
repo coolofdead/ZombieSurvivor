@@ -830,7 +830,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -67075,7 +67075,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -69936,7 +69936,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -71125,7 +71125,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -71788,7 +71788,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -76370,7 +76370,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -77869,7 +77869,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -81611,7 +81611,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -84123,7 +84123,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -94195,7 +94195,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -94418,7 +94418,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -95024,7 +95024,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 48
+  m_PreferredWidth: 36
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -96920,6 +96920,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d7509f61de1fcf0439804972fd248cbd, type: 3}
   - {fileID: 8300000, guid: 2df1aa8ddebaa604fbea76f9c640a71d, type: 3}
   - {fileID: 8300000, guid: a61f0480d9858ef41a8600f8279f13f1, type: 3}
+  - {fileID: 8300000, guid: 664e006dd43c6114bac62b860d9e3de5, type: 3}
+  - {fileID: 8300000, guid: 871d2efa921f8bc46b1724c6fe1f24db, type: 3}
+  - {fileID: 8300000, guid: f36fc4abf2591eb4e9de4993aae9762d, type: 3}
+  - {fileID: 8300000, guid: 5c51ed21d0c921b419c278f8d9148e5a, type: 3}
 --- !u!1001 &2136428409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98823,6 +98827,10 @@ PrefabInstance:
     - target: {fileID: 1849278453104634148, guid: 738d69bf3bf5102478fe21b7039ed6c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707905683079710026, guid: 738d69bf3bf5102478fe21b7039ed6c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 3085231146769663765, guid: 738d69bf3bf5102478fe21b7039ed6c5, type: 3}
       propertyPath: m_Padding.m_Left

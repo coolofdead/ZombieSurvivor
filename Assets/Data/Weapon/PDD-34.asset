@@ -16,7 +16,7 @@ MonoBehaviour:
   gunStyle: 1
   gunPerk: 0
   weaponSprite: {fileID: 1284144986, guid: dc4971859cacb45c388f3437fc0bd4eb, type: 3}
-  price: 650
+  price: 1200
   shootClip: {fileID: 8300000, guid: 50114eab26a8e4b569c9bc10dcc5fea4, type: 3}
   emptyMagazineClip: {fileID: 8300000, guid: 7d948f874ee684d29b32f15e69ff671e, type: 3}
   reloadClip: {fileID: 8300000, guid: 43586a0aa881a4187b5138e842eabdeb, type: 3}

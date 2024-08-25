@@ -80,7 +80,7 @@ public class VendorTruck : MonoBehaviour
     {
         if (!other.gameObject.CompareTag("Player")) return;
 
-        sellingPerkTMP.transform.DOScale(Vector3.one, 0.35f).SetEase(Ease.OutSine);
+        buyTMP.transform.DOScale(Vector3.one, 0.35f).SetEase(Ease.OutSine);
         isPlayerInRangeToBuy = true;
     }
 
@@ -88,7 +88,7 @@ public class VendorTruck : MonoBehaviour
     {
         if (!other.gameObject.CompareTag("Player")) return;
 
-        sellingPerkTMP.transform.DOScale(Vector3.zero, 0.35f).SetEase(Ease.OutSine);
+        buyTMP.transform.DOScale(Vector3.zero, 0.35f).SetEase(Ease.OutSine);
         isPlayerInRangeToBuy = false;
     }
 }

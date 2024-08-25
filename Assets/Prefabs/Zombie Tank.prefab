@@ -276,7 +276,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   headOffset: 0.7
   legsOffset: 0.55
-  damageDelay: 0.31
+  damageDelay: 0.46
   exploseOnDeath: 0
   damageOnExplode: 13
   zombieSR: {fileID: 7616901947716841692}

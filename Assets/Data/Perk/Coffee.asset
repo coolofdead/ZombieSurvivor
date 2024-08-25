@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Coffee
   m_EditorClassIdentifier: 
   perkType: 9
-  price: 100
+  price: 500
   ico: {fileID: -782205526, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Coffee
   bonusText: gain stamina

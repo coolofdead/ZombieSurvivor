@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Melon
   m_EditorClassIdentifier: 
   perkType: 10
-  price: 100
+  price: 500
   ico: {fileID: -300994094, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Watermelon
   bonusText: extra stamina regen

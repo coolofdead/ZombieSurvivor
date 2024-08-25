@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BloodPack
   m_EditorClassIdentifier: 
   perkType: 5
-  price: 100
+  price: 500
   ico: {fileID: -1020055901, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Blood Pack
   bonusText: gain 50 life

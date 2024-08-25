@@ -52,8 +52,6 @@ public class Zombie : MonoBehaviour, IShootable
 
     public void Hit(int damage)
     {
-        if (health == 0) return;
-
         health = Mathf.Clamp(health - damage, 0, MaxHealth);
 
         zombieHitAnimator.SetTrigger("hit");

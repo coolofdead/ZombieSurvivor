@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeavySniperBullet
   m_EditorClassIdentifier: 
   perkType: 3
-  price: 100
+  price: 500
   ico: {fileID: -1256199956, guid: 0111ca4f7c64241c1ab3b449fe7f9608, type: 3}
   name: Heavy Sniper Bullet
   bonusText: more damage on sniper
